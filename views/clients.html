@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+    <link rel="stylesheet" href="../css/track.css">
+    <link rel="stylesheet" href="../css/client.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="../scripts/utility.js"></script>
+</head>
+
+<body>
+    <i id="menu-btn" class='bx bx-menu' undefined></i>
+    <i id="cross" class='bx bx-x' style='color:#ec3131'></i>
+    <!-- <div class="menu-btn">
+        <i class='bx bx-menu' undefined></i>
+    </div> -->
+    <div id="container">
+        <!-- Sidebar will be here ---------- -->
+        <div class="nav"></div>
+
+        <div class="main">
+            <div class="add-client">
+                <h1>New Client</h1>
+                <form action="">
+                    <label for="name">Client Name</label>
+                    <input type="text" name="name" id="client-name">
+                    <label for="client">Contact Person</label>
+                    <input type="text" name="person" id="client-person">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="client-email">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="client-phone">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="client-address" cols="10" rows="5"></textarea>
+                    <div class="form-btn">
+                        <button id="save-btn">Save</button>
+                        <button id="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="edit-client">
+                <h1>New Client</h1>
+                <form action="" method="">
+                    <label for="name">Client Name</label>
+                    <input type="text" name="name" id="edit-client-name">
+                    <label for="client">Contact Person</label>
+                    <input type="text" name="person" id="edit-client-person">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="edit-client-email">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="edit-client-phone">
+                    <label for="status">Status</label>
+                    <select name="status" id="edit-status">
+                        <option value="active">Active</option>
+                        <option value="deactive">Deactive</option>
+                    </select>
+                    <label for="address">Address</label>
+                    <textarea name="address" id="edit-client-address" cols="10" rows="5"></textarea>
+                    <div class="form-btn">
+                        <button id="edit-btn">Update</button>
+                        <button id="edit-cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="data">
+                <div class="client-head">
+                    <h1>Clients</h1>
+                    <button class="new-client-btn">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                            </svg> New Client
+                        </span>
+                    </button>
+                </div>
+                <div class="client-search">
+                    <input placeholder="Search By Client Name" type="text" name="text" class="client-input">
+                    <button id="client-btn">Search</button>
+                </div>
+                <div class="client-list">
+                    <table class="client-table">
+                        <thead>
+                            <tr>
+                                <th>CLIENT NAME</th>
+                                <th>CONTACT PERSON</th>
+                                <th>CONTACT DETAILS</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NAME</td>
+                                <td>CONTACT PERSON</td>
+                                <td>CONTACT DETAILS</td>
+                                <td>Active</td>
+                                <td>
+                                    <div class="action">
+                                        <i class='bx bxs-edit' style='color:#025cf1'></i>
+                                        <i class='bx bxs-trash-alt' style='color:#f17002'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<script src="../scripts/scrpit.js"></script>
+<script src="../scripts/client.js"></script>
+
+</html>

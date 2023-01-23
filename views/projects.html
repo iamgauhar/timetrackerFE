@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/track.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="../scripts/utility.js"></script>
+</head>
+
+<body>
+    <i id="menu-btn" class='bx bx-menu' undefined></i>
+    <i id="cross" class='bx bx-x' style='color:#ec3131'></i>
+    <!-- <div class="menu-btn">
+        <i class='bx bx-menu' undefined></i>
+    </div> -->
+
+    <div id="container">
+        <!-- Sidebar will be here ---------- -->
+        <div class="nav"></div>
+
+        <div class="main">
+
+            <div class="new-project">
+                <h1>New Project</h1>
+                <form action="" method="post">
+                    <label for="name">Project Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="client">Client</label>
+                    <select name="client" id="client">
+                        <option value="">Select client</option>
+                        <option value="client1">client1</option>
+                        <option value="client1">client1</option>
+                    </select>
+                    <label for="description">Project Description</label>
+                    <textarea name="description" id="description" cols="10" rows="10"></textarea>
+                    <div class="form-btn">
+                        <input type="submit" name="" id="submit">
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="edit-project">
+                <h1>edit-project</h1>
+                <form action="" method="post">
+                    <label for="name">Project Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="client">Client</label>
+                    <select name="client" id="client">
+                        <option value="">Select client</option>
+                        <option value="client1">client1</option>
+                        <option value="client1">client1</option>
+                    </select>
+                    <label for="desc">Project Description</label>
+                    <textarea name="desc" id="desc" cols="10" rows="10"></textarea>
+                    <label for="client">Status</label>
+                    <select name="client" id="client">
+                        <option value="">Select Status</option>
+                        <option value="Active">Active</option>
+                        <option value="Deactive">Deactive</option>
+                    </select>
+                    <div class="form-btn">
+                        <input type="submit" name="" id="submit">
+                        <button id="cancel-edit">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="data">
+                <div class="client-head">
+                    <h1>Projects</h1>
+                    <button class="new-client-btn">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                            </svg> Add new project
+                        </span>
+                    </button>
+                </div>
+                <div class="client-search">
+                    <input placeholder="Search By Client Name" type="text" name="text" class="client-input">
+                    <button id="client-btn">Search</button>
+                </div>
+                <div class="client-list">
+                    <table class="client-table">
+                        <thead>
+                            <tr>
+                                <th>PROJECT NAME</th>
+                                <th>CLIENT</th>
+                                <th>CREATED</th>
+                                <th>HOURS</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NAME</td>
+                                <td>Client name</td>
+                                <td>12/12/2002</td>
+                                <td>1:30</td>
+                                <td>ACTIVE</td>
+                                <td>
+                                    <div class="action">
+                                        <i class='bx bxs-edit' style='color:#025cf1'></i>
+                                        <i class='bx bxs-trash-alt' style='color:#f17002'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<script src="../scripts/scrpit.js"></script>
+<script src="../scripts/project.js"></script>
+
+</html>

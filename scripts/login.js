@@ -39,7 +39,8 @@ document.getElementById("signup-btn").addEventListener("click", async (e) => {
     const result = await res.json();
     if (result.result == true) {
       returnMsg = result.msg;
-      // document.cookie("token = result.token");
+      document.cookie("token", result.token);
+
       color = "linear-gradient(to right, #00b09b, #96c93d)";
       document.querySelector(".signupForm").reset();
     } else if (result.result == false) {
@@ -75,6 +76,7 @@ document.getElementById("login-btn").addEventListener("click", async (e) => {
     console.log(result);
     if (result.result == true) {
       returnMsg = result.msg;
+
       color = "linear-gradient(to right, #00b09b, #96c93d)";
 
       document.querySelector(".signupForm").reset();

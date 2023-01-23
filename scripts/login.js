@@ -26,13 +26,16 @@ document.getElementById("signup-btn").addEventListener("click", async (e) => {
   };
 
   try {
-    const res = await fetch("http://localhost:5000/user/signup", {
-      method: "POST",
-      body: JSON.stringify(signData),
-      headers: {
-        "content-type": "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://timetrackerbe.up.railway.app/user/signup",
+      {
+        method: "POST",
+        body: JSON.stringify(signData),
+        headers: {
+          "content-type": "application/json",
+        },
+      }
+    );
     const result = await res.json();
     if (result.result == true) {
       returnMsg = result.msg;
@@ -61,7 +64,7 @@ document.getElementById("login-btn").addEventListener("click", async (e) => {
   };
 
   try {
-    const res = await fetch("http://localhost:5000/user/login", {
+    const res = await fetch("https://timetrackerbe.up.railway.app/user/login", {
       method: "POST",
       body: JSON.stringify(logData),
       headers: {
